@@ -17,12 +17,20 @@
 - **工程原则**：改代码前先备份，改完逐表逐行 diff 证明零丢失；脏数据主动清，清前整库备份留档
 
 ### RVLogbook — 房车/载具维护与保质期日志
-iOS App，Swift 6 + SwiftUI。
+iOS App，Swift 6 + SwiftUI。 → [`lengocdai102-hub/RVLogbook`](https://github.com/lengocdai102-hub/RVLogbook)（私有仓库）
 
 - **纯本地**：无服务器、无账号、无第三方 SDK、无网络收集
 - 多载具（房车 / 拖挂 / 船 / 拖拉机），里程与小时双轨
 - 保养计划到期引擎、CSV / JSON 导出、原子写入 + 损坏回退
 - 20/20 自研测试 runner 全绿（不依赖 XCTest，可在无 Xcode 环境跑）
+
+### 美区 App Store 独立开发者可行性调研
+→ [`lengocdai102-hub/ios-market-research`](https://github.com/lengocdai102-hub/ios-market-research)（公开）
+
+- **11,841 个 app** 全量采集分类，**9/9 核心指标独立重算交叉核验通过**
+- 关键发现：公司主体 6,729 个 app 垄断 **97.84%** 评分数；个人开发者 916 个（7.7%）只拿到 **0.16%**
+- 识别出 43 个「停更超一年但仍有 ≥500 评分」的高价值僵尸位
+- 方法论：Scrapling + 真实 Chrome 指纹绕过反爬；核心指标不采信采集期写入值，一律独立重算
 
 ### 其他自动化
 - **三角洲行动交易行机器人** — OCR + 屏幕监控的半自动交易行记录
